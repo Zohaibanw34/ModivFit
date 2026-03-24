@@ -1,0 +1,1 @@
+enum SuccessPurpose { registration, passwordUpdated }
