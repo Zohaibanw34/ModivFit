@@ -1,0 +1,12 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return response()->json([
+        'ok' => true,
+        'service' => config('app.name'),
+        'message' => 'Backend is running',
+        'time' => now()->toIso8601String(),
+    ]);
+});
